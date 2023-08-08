@@ -1,0 +1,34 @@
+[
+    {
+        "Model": "ViT-B SAM HQ",
+        "Number of parameters": "362M",
+        "Size": "379 MB",
+        "AP": "46.7",
+        "FPS": "9.8",
+        "weights_link": "https://huggingface.co/lkeab/hq-sam/resolve/main/sam_hq_vit_b.pth"
+    },
+    {
+        "Model": "ViT-L SAM HQ",
+        "Number of parameters": "1.196B",
+        "Size": "1.25 GB",
+        "AP": "49.5",
+        "FPS": "4.8",
+        "weights_link": "https://huggingface.co/lkeab/hq-sam/resolve/main/sam_hq_vit_l.pth"
+    },
+    {
+        "Model": "ViT-H SAM HQ",
+        "Number of parameters": "2.452B",
+        "Size": "2.57 GB",
+        "AP": "49.9",
+        "FPS": "3.4",
+        "weights_link": "https://huggingface.co/lkeab/hq-sam/resolve/main/sam_hq_vit_h.pth"
+    },
+    {
+        "Model": "ViT-tiny SAM HQ",
+        "Number of parameters": "37M",
+        "Size": "42.5 MB",
+        "AP": "45",
+        "FPS": "41.2",
+        "weights_link": "https://huggingface.co/lkeab/hq-sam/resolve/main/sam_hq_vit_tiny.pth"
+    }
+]
