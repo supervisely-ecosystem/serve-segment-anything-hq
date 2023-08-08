@@ -1,0 +1,28 @@
+{
+    "name": "Serve Segment Anything in High Quality",
+    "type": "app",
+    "version": "2.0.0",
+    "description": "Deploy SAM HQ as REST API service",
+    "categories": [
+        "neural network",
+        "images",
+        "videos",
+        "interactive segmentation",
+        "serve"
+    ],
+    "icon_cover": true,
+    "gpu": "preferred",
+    "session_tags": [
+        "sly_smart_annotation",
+        "deployed_nn_object_segmentation"
+    ],
+    "community_agent": false,
+    "docker_image": "supervisely/segment-anything-hq:1.0.0",
+    "instance_version": "6.7.33",
+    "entrypoint": "python -m uvicorn main:model.app --app-dir ./supervisely_integration/serve/src --host 0.0.0.0 --port 8000 --ws websockets",
+    "port": 8000,
+    "task_location": "application_sessions",
+    "license": {
+        "type": "Apache-2.0"
+    }
+}

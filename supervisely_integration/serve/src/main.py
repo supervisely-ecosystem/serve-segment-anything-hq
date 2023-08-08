@@ -29,7 +29,8 @@ from cachetools import TTLCache
 # for debug, has no effect in production
 load_dotenv("supervisely_integration/serve/debug.env")
 load_dotenv(os.path.expanduser("~/supervisely.env"))
-weights_location_path = "./weights"
+
+weights_location_path = "/weights"
 model_data_path = "./supervisely_integration/serve/models/model_data.json"
 api = sly.Api()
 

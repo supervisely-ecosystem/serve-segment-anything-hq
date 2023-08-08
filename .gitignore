@@ -1,1 +1,3 @@
 weights/
+supervisely_integration/serve/src/__pycache__/
+supervisely_integration/.DS_Store
