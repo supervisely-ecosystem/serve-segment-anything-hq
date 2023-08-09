@@ -6,7 +6,6 @@
 <p align="center">
   <a href="#Overview">Overview</a> •
   <a href="#How-to-Run">How to Run</a> •
-  <a href="#Model-application-examples">Model application examples</a> •
   <a href="#Controls">Controls</a> •
   <a href="#Acknowledgment">Acknowledgment</a> 
 </p>
