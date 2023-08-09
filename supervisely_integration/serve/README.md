@@ -47,10 +47,10 @@ Visual comparison between SAM and HQ-SAM
 
 **Application key points:**  
 - Manually selected ROI
-- Deploy on GPU(faster) or CPU(slower)
+- Deploy on GPU for fast inference
 - Accurate predictions in most cases
 - Correct prediction interactively with `green` and `red` clicks
-- Select one of 4 pre-trained models
+- Select one of the 4 pre-trained models
 - Models are class agnostic, you can segment any object from any domain
 
 
@@ -63,11 +63,6 @@ The Segment Anything Model in High Quality (SAM-HQ) can generate masks for objec
 Besides segmenting new objects, proposed method allows to correct external masks, e.g. produced by other
 instance or semantic segmentation models. A user can fix false negative and false positive regions with positive 🟢
 and negative 🔴 clicks, respectively.
-
-🔥🔥🔥 Check out our [youtube tutorial](https://youtu.be/UGlEU52wGwM) and the [complete guide](PASTE_LINK_HERE!!!) in our blog:
-
-<a href="https://youtu.be/UGlEU52wGwM" target="_blank"><img src="xxx"/></a>
-
 
 # How to Run
 
