@@ -2,7 +2,7 @@
     "name": "Serve Segment Anything in High Quality",
     "type": "app",
     "version": "2.0.0",
-    "description": "Deploy SAM HQ as REST API service",
+    "description": "Run HQ-SAM and then use in labeling tool",
     "categories": [
         "neural network",
         "images",
@@ -13,7 +13,7 @@
     "icon": "https://github.com/supervisely-ecosystem/serve-segment-anything-hq/assets/115161827/a74a35db-cd4b-4726-8a0b-f0c396773eed",
     "icon_cover": true,
     "poster": "https://github.com/supervisely-ecosystem/serve-segment-anything-hq/assets/115161827/b84249b6-17f3-42f4-ad16-4a6aca2aae4a",
-    "gpu": "preferred",
+    "gpu": "required",
     "session_tags": [
         "sly_smart_annotation",
         "deployed_nn_object_segmentation"
