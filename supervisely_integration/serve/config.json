@@ -10,7 +10,9 @@
         "interactive segmentation",
         "serve"
     ],
+    "icon": "",
     "icon_cover": true,
+    "poster": "https://github.com/supervisely-ecosystem/serve-segment-anything-hq/assets/115161827/b84249b6-17f3-42f4-ad16-4a6aca2aae4a",
     "gpu": "preferred",
     "session_tags": [
         "sly_smart_annotation",
