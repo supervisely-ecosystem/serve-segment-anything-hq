@@ -13,7 +13,7 @@
 
 [![](https://img.shields.io/badge/supervisely-ecosystem-brightgreen)](https://ecosystem.supervise.ly/apps/supervisely-ecosystem/serve-segment-anything-hq/supervisely_integration/serve)
 [![](https://img.shields.io/badge/slack-chat-green.svg?logo=slack)](https://supervise.ly/slack)
-![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/supervisely-ecosystem/serve-segment-anything-hq/supervisely_integration/serve)
+![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/supervisely-ecosystem/serve-segment-anything-hq)
 [![views](https://app.supervise.ly/img/badges/views/supervisely-ecosystem/serve-segment-anything-hq/supervisely_integration/serve.png)](https://supervise.ly)
 [![runs](https://app.supervise.ly/img/badges/runs/supervisely-ecosystem/serve-segment-anything-hq/supervisely_integration/serve.png)](https://supervise.ly)
  
@@ -51,11 +51,11 @@ Visual comparison between SAM and HQ-SAM
 - Deploy on GPU(faster) or CPU(slower)
 - Accurate predictions in most cases
 - Correct prediction interactively with `green` and `red` clicks
-- Select one of 3 pretrained models
+- Select one of 4 pre-trained models
 - Models are class agnostic, you can segment any object from any domain
 
 
-The Segment Anything Model (SAM) can generate masks for objects on images using different types of prompts such as points and bounding boxes, and it can also be applied to raw image to generate masks for all objects.
+The Segment Anything Model in High Quality (SAM-HQ) can generate masks for objects on images using different types of prompts such as points and bounding boxes, and it can also be applied to raw image to generate masks for all objects.
 
 <p align="center">
 <img src="https://user-images.githubusercontent.com/119248312/229991240-9afc6fc9-fc94-45b0-bf96-40d1dda82ba0.jpg" width="950"/>
@@ -65,9 +65,9 @@ Besides segmenting new objects, proposed method allows to correct external masks
 instance or semantic segmentation models. A user can fix false negative and false positive regions with positive 🟢
 and negative 🔴 clicks, respectively.
 
-🔥🔥🔥 Check out our [youtube tutorial](https://youtu.be/PQCdLCN7uCo) and the [complete guide](https://supervisely.com/blog/xmem-segment-anything-video-object-segmentation/) in our blog:
+🔥🔥🔥 Check out our [youtube tutorial](https://youtu.be/UGlEU52wGwM) and the [complete guide](PASTE_LINK_HERE!!!) in our blog:
 
-<a href="https://youtu.be/PQCdLCN7uCo" target="_blank"><img src="https://github.com/supervisely-ecosystem/XMem/assets/106374579/c4c18f53-27f0-4469-8a07-f59404199e64"/></a>
+<a href="https://youtu.be/UGlEU52wGwM" target="_blank"><img src="xxx"/></a>
 
 
 # How to Run
@@ -78,14 +78,12 @@ and negative 🔴 clicks, respectively.
 
 <img src="https://github.com/supervisely-ecosystem/serve-segment-anything-hq/assets/119248312/fd120e1a-bdda-4492-b193-33147f5ba2f0"/> 
 
-2. Select the pretrained model and deploy it on your device by clicking `Serve` button.
-<img src="https://user-images.githubusercontent.com/115161827/232102026-99725e52-d844-44fd-8449-061f84116cf6.png" />
+2. Select the pre-trained model and deploy it on your device by clicking the `Serve` button.
+<img src="https://github.com/supervisely-ecosystem/serve-segment-anything-hq/assets/115161827/f618c234-7a86-4fec-8aa2-82241cd0c88e" />
 
-3. You'll see `Model has been successfully loaded` message indicating that the application has been successfully started and you can work with it from now on.
+3. You'll see a `Model has been successfully loaded` message indicating that the application has been successfully started and you can work with it from now on.
+<img src="https://github.com/supervisely-ecosystem/serve-segment-anything-hq/assets/115161827/db603da1-8826-46e3-833f-83a978c41801" />
 
-<p align="center">
-  <img src="https://user-images.githubusercontent.com/115161827/229956389-bb8780db-9bd8-442b-aa28-cfc552316bc5.png" height="140px" />
-</p>
 
 
 **Custom models**
@@ -93,44 +91,6 @@ and negative 🔴 clicks, respectively.
 Copy model file path from Team Files and select model architecture:
 
 https://user-images.githubusercontent.com/91027877/232559973-dca553e1-d86f-4808-aaab-cf68bafc0e6f.mp4
-
-# Model application examples
-
-Single-click segmentation of a complicated object using Smart Tool:
-
-https://user-images.githubusercontent.com/91027877/232552579-8f616853-531b-4531-90a1-773e265f9792.mp4
-
-Mask correction with Positive and Negative points in Smart Tool:
-  
-https://user-images.githubusercontent.com/115161827/232538639-02c688c5-58bd-4500-b9c9-04aa5bf720b0.mp4
-  
-Applying model in raw mode via NN image labeling app:
-  
-https://user-images.githubusercontent.com/115161827/232538575-1863ff7a-1f7e-418a-8157-7cdd4364abdc.mp4
-
-Applying model to object in bounding box:
-  
-https://user-images.githubusercontent.com/115161827/232538528-477a18ad-e701-4d0b-8ce7-6abff3246197.mp4
- 
-Applying model to the points:
-
-https://user-images.githubusercontent.com/91027877/233379739-8fbfe2d0-7232-40ba-8de1-dc209069edd5.mp4
-  
-Applying model in the combined mode (using both points and bounding box):
-  
-https://user-images.githubusercontent.com/115161827/232538470-db1ed291-aa0a-48df-ae83-5e82193aca51.mp4
-
-If you want predicted masks to be automatically overdrawn be replacing old masks with new masks, you can set "replace_masks" parameter to true:
-
-https://user-images.githubusercontent.com/91027877/233377950-c480eb09-4727-41ca-ab8f-24214ed9d945.mp4
-
-You can also use this app for segmenting objects on videos using [video labeling tool](https://ecosystem.supervise.ly/apps/video-labeling-tool) (here is full [guide](https://www.youtube.com/watch?v=eaAh856QKYg) on working with smart tool in video labeling tool):
-
-https://user-images.githubusercontent.com/91027877/233416370-6e37d654-96eb-42fe-91f0-4ea7a6e6503a.mp4
-
-If you want to label batch of images fast, you can use this app in combination with [batched smart tool](https://ecosystem.supervisely.com/apps/dev-smart-tool-batched):
-
-https://user-images.githubusercontent.com/91027877/239091427-cc8cf488-db46-4786-b878-ba71af85f99c.mp4
 
 # Controls
 
@@ -159,4 +119,4 @@ https://user-images.githubusercontent.com/91027877/239091427-cc8cf488-db46-4786-
 
 # Acknowledgment
 
-This app is based on the great work `Segment Anything`: [github](https://github.com/facebookresearch/segment-anything). ![GitHub Org's stars](https://img.shields.io/github/stars/facebookresearch/segment-anything?style=social)
+This app is based on the great work `Segment Anything in High Quality`. [GitHub](https://github.com/SysCV/sam-hq)  ![GitHub Org's stars](https://img.shields.io/github/stars/SysCV/sam-hq?style=social)
