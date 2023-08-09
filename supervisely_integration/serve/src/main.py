@@ -39,10 +39,10 @@ class SegmentAnythingHQModel(sly.nn.inference.PromptableSegmentation):
     def add_content_to_custom_tab(self, gui):
         self.select_model_type = RadioGroup(
             items=[
+                RadioGroup.Item(value="vit_tiny"),
                 RadioGroup.Item(value="vit_b"),
                 RadioGroup.Item(value="vit_l"),
                 RadioGroup.Item(value="vit_h"),
-                RadioGroup.Item(value="vit_tiny"),
             ],
             direction="vertical",
         )
