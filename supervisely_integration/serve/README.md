@@ -1,5 +1,5 @@
 <div align="center" markdown>
-<img src="https://user-images.githubusercontent.com/115161827/232042280-efa9361c-c122-4ccd-80d6-575a63b4fcf7.png"/>  
+<img src="https://github.com/supervisely-ecosystem/serve-segment-anything-hq/assets/115161827/b84249b6-17f3-42f4-ad16-4a6aca2aae4a"/>  
 
 # Serve Segment Anything in High Quality
   
@@ -75,17 +75,17 @@ and negative 🔴 clicks, respectively.
 **Pretrained models**
 
 1. Start the application from Ecosystem.
-<p align="center">
-<img src="https://user-images.githubusercontent.com/115161827/232101357-75f58154-266f-447c-b4a0-4cb620e510e4.gif" width="700"/> </p>
+
+<img src="https://github.com/supervisely-ecosystem/serve-segment-anything-hq/assets/119248312/fd120e1a-bdda-4492-b193-33147f5ba2f0"/> 
 
 2. Select the pretrained model and deploy it on your device by clicking `Serve` button.
 <img src="https://user-images.githubusercontent.com/115161827/232102026-99725e52-d844-44fd-8449-061f84116cf6.png" />
 
 3. You'll see `Model has been successfully loaded` message indicating that the application has been successfully started and you can work with it from now on.
 
-<div align="center" markdown>
+<p align="center">
   <img src="https://user-images.githubusercontent.com/115161827/229956389-bb8780db-9bd8-442b-aa28-cfc552316bc5.png" height="140px" />
-</div>
+</p>
 
 
 **Custom models**
