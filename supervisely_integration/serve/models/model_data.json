@@ -1,5 +1,13 @@
 [
     {
+        "Model": "ViT-tiny SAM HQ",
+        "Number of parameters": "37M",
+        "Size": "42.5 MB",
+        "AP": "45",
+        "FPS": "41.2",
+        "weights_link": "https://huggingface.co/lkeab/hq-sam/resolve/main/sam_hq_vit_tiny.pth"
+    },
+    {
         "Model": "ViT-B SAM HQ",
         "Number of parameters": "362M",
         "Size": "379 MB",
@@ -22,13 +30,5 @@
         "AP": "49.9",
         "FPS": "3.4",
         "weights_link": "https://huggingface.co/lkeab/hq-sam/resolve/main/sam_hq_vit_h.pth"
-    },
-    {
-        "Model": "ViT-tiny SAM HQ",
-        "Number of parameters": "37M",
-        "Size": "42.5 MB",
-        "AP": "45",
-        "FPS": "41.2",
-        "weights_link": "https://huggingface.co/lkeab/hq-sam/resolve/main/sam_hq_vit_tiny.pth"
     }
 ]
