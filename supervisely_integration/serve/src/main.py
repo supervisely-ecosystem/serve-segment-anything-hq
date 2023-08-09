@@ -463,6 +463,7 @@ model = SegmentAnythingHQModel(
 
 if sly.is_production():
     model.serve()
+    model.gui._models_table.select_row(2)  # select ViT-L SAM HQ
 else:
     device = "cuda" if torch.cuda.is_available() else "cpu"
     print("Using device:", device)
