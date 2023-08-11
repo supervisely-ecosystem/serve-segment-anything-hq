@@ -1,5 +1,5 @@
 {
-    "name": "Segment Anything in High Quality",
+    "name": "Serve Segment Anything in High Quality",
     "type": "app",
     "version": "2.0.0",
     "description": "Run HQ-SAM and then use in labeling tool",
