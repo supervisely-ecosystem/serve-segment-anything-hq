@@ -22,6 +22,10 @@
 
 🔥 Try HQ-SAM to upgrade [SAM](https://app.supervisely.com/ecosystem/apps/serve-segment-anything-model?id=246) for high-quality zero-shot segmentation. Refer to this [paper](https://arxiv.org/abs/2306.01567) for more details.
 
+🔥🔥🔥 Check out our [youtube tutorial](https://youtu.be/UGlEU52wGwM) and the [complete guide in our blog](https://supervisely.com/blog/segment-anything-in-high-quality-HQ-SAM/):   
+
+<a href="https://youtu.be/UGlEU52wGwM" target="_blank"><img src="https://github.com/supervisely/blog-raw-media-content/assets/106374579/9ce352ec-3391-43d6-b058-94bbbe611d9e"/></a>
+
 [Citation](https://github.com/SysCV/sam-hq/tree/main): *"The recent Segment Anything Model (SAM) represents a big leap in scaling up segmentation models, allowing for powerful zero-shot capabilities and flexible prompting. Despite being trained with 1.1 billion masks, SAM's mask prediction quality falls short in many cases, particularly when dealing with objects that have intricate structures. We propose HQ-SAM, equipping SAM with the ability to accurately segment any object, while maintaining SAM's original promptable design, efficiency, and zero-shot generalizability. Our careful design reuses and preserves the pre-trained model weights of SAM, while only introducing minimal additional parameters and computation."*
 
 Visual comparison between SAM and HQ-SAM
