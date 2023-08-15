@@ -326,6 +326,7 @@ class SegmentAnythingHQModel(sly.nn.inference.PromptableSegmentation):
     def serve(self):
         super().serve()
         server = self._app.get_server()
+        self.add_cache_endpoint(server)
 
         @server.post("/smart_segmentation")
         def smart_segmentation(response: Response, request: Request):
