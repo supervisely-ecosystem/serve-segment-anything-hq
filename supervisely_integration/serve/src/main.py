@@ -386,9 +386,9 @@ class SegmentAnythingHQModel(sly.nn.inference.PromptableSegmentation):
                     smtool_state,
                     api,
                     app_dir,
-                    cache_load_img=self.download_image,
-                    cache_load_frame=self.download_frame,
-                    cache_load_img_hash=self.download_image_by_hash,
+                    cache_load_img=self.cache.download_image,
+                    cache_load_frame=self.cache.download_frame,
+                    cache_load_img_hash=self.cache.download_image_by_hash,
                 )
                 self._inference_image_cache.set(hash_str, image_np)
             else:
@@ -469,7 +469,7 @@ class SegmentAnythingHQModel(sly.nn.inference.PromptableSegmentation):
         def is_online(response: Response, request: Request):
             response = {"is_online": True}
             return response
-        
+
         @server.post("/smart_segmentation_batched")
         def smart_segmentation_batched(response: Response, request: Request):
             response_batch = {}
@@ -484,7 +484,6 @@ class SegmentAnythingHQModel(sly.nn.inference.PromptableSegmentation):
                 )
                 response_batch[image_idx] = image_prediction
             return response_batch
-
 
 
 model = SegmentAnythingHQModel(
