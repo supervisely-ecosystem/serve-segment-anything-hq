@@ -108,7 +108,7 @@ class SegmentAnythingHQModel(sly.nn.inference.PromptableSegmentation):
         # build predictor
         self.predictor = SamPredictor(self.sam)
         # define class names
-        self.class_names = ["target_mask"]
+        self.class_names = ["object_mask"]
         # list for storing mask colors
         self.mask_colors = [[255, 0, 0]]
         # variable for storing image ids from previous inference iterations
@@ -180,18 +180,10 @@ class SegmentAnythingHQModel(sly.nn.inference.PromptableSegmentation):
                 output_mode=settings["output_mode"],
             )
             masks = mask_generator.generate(input_image)
-            for i, mask in enumerate(masks):
-                class_name = "object_" + str(i)
-                # add new class to model meta if necessary
-                if not self._model_meta.get_obj_class(class_name):
-                    color = generate_rgb(self.mask_colors)
-                    self.mask_colors.append(color)
-                    self.class_names.append(class_name)
-                    new_class = sly.ObjClass(class_name, sly.Bitmap, color)
-                    self._model_meta = self._model_meta.add_obj_class(new_class)
+            for mask in masks:
                 # get predicted mask
                 mask = mask["segmentation"]
-                predictions.append(sly.nn.PredictionMask(class_name=class_name, mask=mask))
+                predictions.append(sly.nn.PredictionMask(class_name="object_mask", mask=mask))
         elif settings["mode"] == "bbox":
             # get bbox coordinates
             if "rectangle" not in settings:
