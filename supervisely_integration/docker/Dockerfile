@@ -7,7 +7,7 @@ RUN pip3 install torchvision==0.13.1+cu113 --extra-index-url https://download.py
 RUN pip3 install cachetools
 RUN pip3 install timm==0.4.9
 
-RUN python3 -m pip install supervisely==6.73.122
+RUN python3 -m pip install supervisely==6.73.479
 
 RUN mkdir -p weights
 RUN wget https://huggingface.co/lkeab/hq-sam/resolve/main/sam_hq_vit_tiny.pth -O /weights/vit_tiny_sam_hq.pth
